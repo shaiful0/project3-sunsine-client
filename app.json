@@ -1,8 +1,9 @@
 {
   "expo": {
-    "name": "my-app",
-    "slug": "my-app",
+    "name": "deilivery-app",
+    "slug": "deilivery-app",
     "version": "1.0.0",
+    "owner":"shariful_0401",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
