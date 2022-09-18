@@ -7,7 +7,7 @@ import { ArrowRightIcon } from 'react-native-heroicons/mini'
 const FeatureRowTwo = ({ _id, title, description }) => {
   const [bifeFoods, setBifeFoods] = useState([])
   useEffect(() => {
-    const url = `http://localhost:5000/bifefood`
+    const url = `https://radiant-ocean-18549.herokuapp.com/bifefood`
     fetch(url)
       .then(res => res.json())
       .then(data => setBifeFoods(data)).catch(() => {

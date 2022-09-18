@@ -8,7 +8,7 @@ import RestrudentCard from './RestrudentCard';
 const FeaturedRowOne = ({ _id, title, description }) => {
   const [fishfoods, setFishfoods] = useState([]);
   useEffect(() => {
-    const url = `http://localhost:5000/fishfood`
+    const url = `https://radiant-ocean-18549.herokuapp.com/fishfood`
     fetch(url)
       .then(res => res.json())
       .then(data => setFishfoods(data)).catch(() => {

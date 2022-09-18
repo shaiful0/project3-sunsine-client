@@ -9,7 +9,7 @@ const FeaturedRow = ({ _id, title, description, }) => {
 
   const [foods, setFoods] = useState([]);
   useEffect(() => {
-    const url = `http://localhost:5000/food`
+    const url = `https://radiant-ocean-18549.herokuapp.com/food`
     fetch(url)
       .then(res => res.json())
       .then(data => setFoods(data)).catch(() => {

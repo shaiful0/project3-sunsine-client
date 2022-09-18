@@ -13,7 +13,7 @@ const RestrurentScreen = () => {
   const dispatch = useDispatch();
   const [dishes, setDishes] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/rowfood')
+    fetch('https://radiant-ocean-18549.herokuapp.com/rowfood')
       .then(res => res.json())
       .then(data => setDishes(data)).catch(() => {
 
@@ -21,7 +21,7 @@ const RestrurentScreen = () => {
   }, [])
   const [fishes, setFishes] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/rowfoodtwo')
+    fetch('https://radiant-ocean-18549.herokuapp.com/rowfoodtwo')
       .then(res => res.json())
       .then(data => setFishes(data)).catch(() => {
 

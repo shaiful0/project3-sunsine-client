@@ -15,7 +15,7 @@ const HomeScreen = () => {
   // chiken
   const [rows, setRows] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/row`)
+    fetch(`https://radiant-ocean-18549.herokuapp.com/row`)
       .then(res => res.json())
       .then(data => setRows(data)).catch(() => {
 
@@ -25,7 +25,7 @@ const HomeScreen = () => {
   // fish
   const [fishs, setFishs] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/fishrow`)
+    fetch(`https://radiant-ocean-18549.herokuapp.com/fishrow`)
       .then(res => res.json())
       .then(data => setFishs(data)).catch(() => {
 
@@ -35,7 +35,7 @@ const HomeScreen = () => {
   //Bife
   const [bifes, setBifes] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/biferow`)
+    fetch(`https://radiant-ocean-18549.herokuapp.com/biferow`)
       .then(res => res.json())
       .then(data => setBifes(data)).catch(() => {
 
